@@ -6,7 +6,10 @@
 3. [Git bash](https://gitforwindows.org/) **(No Linux e no macOS o git bash já vem instalado!)**
 
 ## 2.Instalação
-Para instalar o repositorio do Gunter você presisa dar o seguinte comando no seu terminal(Caso queria ver como ficou o bot!):
+Para instalar o repositorio do Gunter você presisa dar o seguinte comando no seu terminal(Caso queria ver como ficou o código do bot!):
 ```bash
 git clone https://github.com/jpBrabo/gunter-bot-discord.git
 ```
+
+
+**Projeto criado por jpbrabo!**
