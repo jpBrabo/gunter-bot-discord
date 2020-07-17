@@ -25,6 +25,10 @@ bot.on("ready", () => {
     console.log(`${bot.user.username} tá on!`)
 })
 bot.on("message", (msg) => {
+    
+})
+bot.on("message", (msg) => {
+    if(!msg.content.startsWith(process.env.PREFIX) || msg.author.bot ) return;
     if (msg.content.slice(0).toLowerCase() == 'dia' || msg.content.slice(0).toLowerCase() == "bom dia"){
         msg.react('☀️')
         .then(console.log)
@@ -43,9 +47,6 @@ bot.on("message", (msg) => {
         .catch(console.error);
         msg.reply("boa noite")
     }
-})
-bot.on("message", (msg) => {
-    if(!msg.content.startsWith(process.env.PREFIX) || msg.author.bot ) return;
     const args = msg.content.slice(process.env.PREFIX.length).split(" ")
     const command = args.shift()
     
