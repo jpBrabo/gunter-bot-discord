@@ -43,6 +43,14 @@ bot.on("message", (msg) => {
         .catch(console.error);
         msg.reply("boa noite")
     }
+    
+})
+bot.on("message", (msg) => {
+    if(msg.content == "+dado"){
+        var random = Math.floor(Math.random() * 3);
+        msg.react('🤔')
+        msg.reply(`O número escolhido entre 1 e 6 foi ${random}  :sunglasses: :thumbsup: `)
+    }
 })
 bot.on("message", (msg) => {
     if(!msg.content.startsWith(process.env.PREFIX) || msg.author.bot ) return;
