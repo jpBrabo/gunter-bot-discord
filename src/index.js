@@ -27,30 +27,17 @@ bot.on("ready", () => {
 bot.on("message", (msg) => {
     if (msg.content.slice(0).toLowerCase() == 'dia' || msg.content.slice(0).toLowerCase() == "bom dia"){
         msg.react('☀️')
-        .then(console.log)
-        .catch(console.error);
         msg.reply("acorrrrda! >:/")
     }
     if (msg.content.slice(0).toLowerCase() == 'tarde' || msg.content.slice(0).toLowerCase() == "boa tarde"){
         msg.react('☕')
-        .then(console.log)
-        .catch(console.error);
         msg.reply("tarrrde")
     }
     if(msg.content.slice(0).toLowerCase()  == "boa noite" || msg.content.slice(0).toLowerCase() == "noite"){
         msg.react('🌙')
-        .then(console.log)
-        .catch(console.error);
         msg.reply("boa noite")
     }
     
-})
-bot.on("message", (msg) => {
-    if(msg.content == "+dado"){
-        var random = Math.floor(Math.random() * 3);
-        msg.react('🤔')
-        msg.reply(`O número escolhido entre 1 e 6 foi ${random}  :sunglasses: :thumbsup: `)
-    }
 })
 bot.on("message", (msg) => {
     if(!msg.content.startsWith(process.env.PREFIX) || msg.author.bot ) return;
