@@ -5,5 +5,6 @@ const execute = (bot, msg , args) => {
 }
 module.exports = {
     name:"dado",
-    help:"Sorteia um número de 1 a 10"
+    help:"Sorteia um número de 1 a 10",
+    execute
 }
