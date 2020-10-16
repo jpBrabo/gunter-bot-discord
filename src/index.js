@@ -25,17 +25,17 @@ bot.on("ready", () => {
     console.log(`${bot.user.username} tá on!`)
 })
 bot.on("message", (msg) => {
-    if (msg.content.slice(0).toLowerCase() == 'dia' || msg.content.slice(0).toLowerCase() == "bom dia"){
+    if (msg.content.includes("dia")){
         msg.react('☀️')
         msg.reply("acorrrrda! >:/")
     }
-    if (msg.content.slice(0).toLowerCase() == 'tarde' || msg.content.slice(0).toLowerCase() == "boa tarde"){
+    if (msg.content.includes("tarde")){
         msg.react('☕')
-        msg.reply("tarrrde")
+        msg.channel.send("tarrrde")
     }
-    if(msg.content.slice(0).toLowerCase()  == "boa noite" || msg.content.slice(0).toLowerCase() == "noite"){
+    if(msg.content.includes("noite")){
         msg.react('🌙')
-        msg.reply("boa noite")
+        msg.channel.send("boa noite")
     }
     
 })

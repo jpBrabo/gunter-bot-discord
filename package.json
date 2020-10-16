@@ -6,13 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/index.js --watch src/*",
-    "start":"node src/index.js"
+    "start": "node src/index.js"
   },
   "keywords": [],
   "author": "Joao Pedro",
   "license": "ISC",
   "dependencies": {
     "@discordjs/opus": "^0.3.2",
+    "@giphy/js-fetch-api": "^1.6.0",
     "discord.js": "^12.2.0",
     "dotenv": "^8.2.0",
     "ffmpeg": "0.0.4",
@@ -23,7 +24,7 @@
   "devDependencies": {
     "nodemon": "^2.0.4"
   },
-  "engines":{
-    "node":"12.18.1"
+  "engines": {
+    "node": "12.18.1"
   }
 }

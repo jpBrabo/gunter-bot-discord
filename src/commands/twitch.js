@@ -3,6 +3,6 @@ const execute = (bot, msg, args) => {
 }
 module.exports={
     name:"twitch",
-    help:"pong",
+    help:"twitch do jpbrab0",
     execute,
 }
