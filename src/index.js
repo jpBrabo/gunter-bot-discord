@@ -68,7 +68,7 @@ bot.on("guildMemberAdd",(member) => {
         author: {
             name:'jpbrab0',
             icon_url:`https://cdn.discordapp.com/icons/${member.guild.id}/${member.guild.icon}.png`,
-            url:'https://github.com/jpBrabo',
+            url:'https://github.com/jpBrab0',
         },
         fields: [
             {
@@ -78,27 +78,27 @@ bot.on("guildMemberAdd",(member) => {
             },
             {
                 name:":man_office_worker:  Linkedin",
-                value:"[João Pedro Resende](https://www.linkedin.com/in/jo%C3%A3o-pedro-resende-037b101a4/)",
+                value:"[João Pedro Resende](https://www.linkedin.com/in/jpresdev/)",
                 inline:true
             },
             {
                 name:":computer: Github",
-                value:"[jpbrabo](https://github.com/jpbrabo)",
+                value:"[jpbrabo](https://github.com/jpbrab0)",
                 inline:true
             },
             {
                 name:":bird: Twitter",
-                value:"[@_jpbrab0](https://twitter.com/_jpbrab0)",
+                value:"[@jpbrab0](https://twitter.com/jpbrab0)",
                 inline:true
             },
             {
                 name:":red_circle: Youtube",
-                value:"[jpツ](https://www.youtube.com/channel/UC7HsgG803jN6UakOzSVZ5lQ?view_as=subscriber)",
+                value:"[João Pedro](https://www.youtube.com/channel/UC7HsgG803jN6UakOzSVZ5lQ?view_as=subscriber)",
                 inline:true
             },
             {
                 name:":camera_with_flash: Instagram",
-                value:"[jp._brab0](https://www.instagram.com/jp._brabo/)",
+                value:"[jpresdev](https://www.instagram.com/jpresdev/)",
             }
         ],
         timestamp: new Date(),
